@@ -45,6 +45,7 @@
 
         <!-- Company info-->
         <TextView
+            android:id="@+id/descriptionText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -111,6 +112,28 @@
 
         </LinearLayout>
     </LinearLayout>
+
+        <!--- Added the button for description -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:padding="60dp">
+
+            <Button
+                android:id="@+id/descriptionButton"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:text="Alan's Description"
+                android:textSize="18sp">
+
+            </Button>
+
+        </LinearLayout>
+
+
 
 
     </LinearLayout>

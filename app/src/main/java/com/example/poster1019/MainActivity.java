@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG_PAGE_FAVORITES = "page_favorites";
     private static final String TAG_PAGE_CONTACT = "page_contact";
 
+    //Added the navigator tag for celebrity page.
     private static final String TAG_PAGE_CELEBRITY = "page_celebrity";
 
     //drawer the side menu inside it, and the bottom bar.
@@ -61,6 +62,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * On the setting the fragments if statement, I added the 4th icon and page to the app.
+     * @param savedInstanceState If the activity is being re-initialized after
+     *     previously being shut down then this Bundle contains the data it most
+     *     recently supplied in {@link #onSaveInstanceState}.  <b><i>Note: Otherwise it is null.</i></b>
+     *
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -145,6 +153,11 @@ public class MainActivity extends AppCompatActivity {
         outState.putInt(KEY_CURRENT_PAGE, currentPageId);
     }
 
+    /**
+     * Added the Celebrity page to the string array so that when the celebrity icon is pressed
+     * it switches to the celebrity page.
+     * @param pageId an integer id to get the page selected.
+     */
     private void showPage(int pageId) {
         currentPageId = pageId;
 
@@ -177,7 +190,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    //Toolbar title for each page.
+    /**
+     * Added the if statement for the celebrity page to show the title of the page
+     * @param pageId A int that determines which page number we are.
+     * @return The title of the page.
+     */
     private int titleForPage(int pageId) {
         if (pageId == R.id.nav_favorites) {
             return R.string.title_favorites;
@@ -191,7 +208,11 @@ public class MainActivity extends AppCompatActivity {
         return R.string.posters;
     }
 
-    //Which Fragment tag belongs to a page.
+    /**
+     * Added the celebrity navigator tag
+     * @param pageId The int that determines the page
+     * @return A string containing the tag for the navigator.
+     */
     private String tagForPage(int pageId) {
         if (pageId == R.id.nav_favorites) {
             return TAG_PAGE_FAVORITES;

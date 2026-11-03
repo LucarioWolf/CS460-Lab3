@@ -13,7 +13,7 @@
             android:title="@string/nav_contact"/>
         <!-- Added the fourth page icon for navigators-->
        <item android:id="@+id/nav_celebrity"
-           android:icon="@drawable/ic_mail"
+           android:icon="@drawable/ic_paw"
            android:title="@string/nav_celebrity"/>
    </group>
 

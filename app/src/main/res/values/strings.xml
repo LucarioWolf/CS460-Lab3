@@ -1,12 +1,11 @@
 <resources>
-    <string name="app_name">Poster1019</string>
+    <string name="app_name">Alan\'s Poster App</string>
     <string name="add_to_watchlist">Add To Watchlist</string>
     <string name="posters">Posters</string>
 
     <string name="nav_main">Main Page</string>
     <string name="nav_favorites">Favorite List</string>
     <string name="nav_contact">Contact Us</string>
-    <string name="nav_celebrity">Celebrity</string>
     <string name="title_favorites">Favorite List</string>
     <string name="title_contact">Contact Us</string>
     <string name="app_version">Version 1.0</string>
@@ -20,6 +19,10 @@
     <string name="contact_email_hint">Tap to open your email app</string>
     <string name="no_email_app">No email app found</string>
 
+    <string name="nav_celebrity">Celebrity</string>
+    <string name="alan_description">Alan Ruelas-Cordova is a student from Central Washington University. He developed the celebrity page to show off the best creatures in the world.</string>
+    <string name="celebrity_title">The Cat Celebrities</string>
+    <string name="celebrity_description">These are the great cat celebrities of Alan\'s household. Their names in order of the image are: Pearl, Charlie, Lunar and Oreo. These cats rule the household since 2018 and will continue to rule for time to come.</string>
 
     <plurals name="favorites_added">
         <item quantity="one">Added %d movie to Favorite List</item>
