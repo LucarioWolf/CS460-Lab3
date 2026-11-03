@@ -122,46 +122,54 @@ public class PosterRepository {
 
     /**
      * Changed the posters to fit my top 5 movies
-     * TODO: Change Posters
      */
     private static List<Posters> createPosters() {
         List<Posters> posters = new ArrayList<>();
 
-        Posters the100 = new Posters();
-        the100.id = "vietnam";
-        the100.image = R.drawable.poster3;
-        the100.name = "Vietnam Movie";
-        the100.rating = 5f;
-        the100.createdBy = "Cuong Ngo";
-        the100.story = "This is an Vietnam Movie with a young lady";
-        posters.add(the100);
+        Posters avatarMovie = new Posters();
+        avatarMovie.id = "avatar";
+        avatarMovie.image = R.drawable.avatar_aang_poster;
+        avatarMovie.name = "Avatar Aang: The Last Airbender";
+        avatarMovie.rating = 4f;
+        avatarMovie.createdBy = "Lauren Montgomery";
+        avatarMovie.story = "After the events Avatar: The Last Airbender, Avatar Aang looks for answers to help restore the Air Nation.";
+        posters.add(avatarMovie);
 
-        Posters chineseMovie = new Posters();
-        chineseMovie.id = "chinese";
-        chineseMovie.image = R.drawable.poster4;
-        chineseMovie.name = "Chinese Movie";
-        chineseMovie.rating = 4f;
-        chineseMovie.createdBy = "Zhang San";
-        chineseMovie.story = "This is an Chinese Movie with a young lady.";
-        posters.add(chineseMovie);
+        Posters forgottenMovie = new Posters();
+        forgottenMovie.id = "forgotten";
+        forgottenMovie.image = R.drawable.forgotten_island_poster;
+        forgottenMovie.name = "Forgotten Island";
+        forgottenMovie.rating = 4f;
+        forgottenMovie.createdBy = "Joel Crawford & Januel Mercado";
+        forgottenMovie.story = "Two best friends trying to recover their memories while traveling the forgotten islands.";
+        posters.add(forgottenMovie);
 
-        Posters japanMovie = new Posters();
-        japanMovie.id = "japanese";
-        japanMovie.image = R.drawable.poster1;
-        japanMovie.name = "Japanese Movie";
-        japanMovie.rating = 3f;
-        japanMovie.createdBy = "Juzo Itami";
-        japanMovie.story = "This is an Japanese Movie.";
-        posters.add(japanMovie);
+        Posters backroomMovie = new Posters();
+        backroomMovie.id = "backroom";
+        backroomMovie.image = R.drawable.backroom_poster;
+        backroomMovie.name = "Backrooms";
+        backroomMovie.rating = 3.2f;
+        backroomMovie.createdBy = "Kane Parsons";
+        backroomMovie.story = "A furniture store owner discovers something in his walls.";
+        posters.add(backroomMovie);
 
-        Posters americanMovie = new Posters();
-        americanMovie.id = "american";
-        americanMovie.image = R.drawable.poster2;
-        americanMovie.name = "American Movie";
-        americanMovie.rating = 5f;
-        americanMovie.createdBy = "Tim Burton";
-        americanMovie.story = "This is an American Movie.";
-        posters.add(americanMovie);
+        Posters marioMovie = new Posters();
+        marioMovie.id = "mario";
+        marioMovie.image = R.drawable.mario_poster;
+        marioMovie.name = "The Super Mario Galaxy Movie";
+        marioMovie.rating = 3f;
+        marioMovie.createdBy = "Aaron Horvath & Michael Jelenic";
+        marioMovie.story = "Mario and Luigi travels the galaxy.";
+        posters.add(marioMovie);
+
+        Posters toyMovie = new Posters();
+        toyMovie.id = "toy";
+        toyMovie.image = R.drawable.toy_story_poster;
+        toyMovie.name = "Toy Story 5";
+        toyMovie.rating = 3.4f;
+        toyMovie.createdBy = "Andrew Stanton";
+        toyMovie.story = "Jesse battles with tech to find a friend for Bonnie.";
+        posters.add(toyMovie);
 
         return posters;
 
