@@ -120,6 +120,10 @@ public class PosterRepository {
         }
     }
 
+    /**
+     * Changed the posters to fit my top 5 movies
+     * TODO: Change Posters
+     */
     private static List<Posters> createPosters() {
         List<Posters> posters = new ArrayList<>();
 
